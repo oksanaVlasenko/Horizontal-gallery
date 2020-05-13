@@ -10,8 +10,7 @@
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
-  padding: 20px;
-
+  padding: 30px 5px;
   /* prevent accidentally going back or triggering other swipe events */
   -ms-scroll-chaining: none;
   overscroll-behavior: contain;
@@ -31,8 +30,6 @@
   scroll-snap-type: x mandatory;
 
   /* stop scrolling before reaching edge */
-  scroll-padding-left: 20px;
-  scroll-padding-inline-start: 20px;
 }
 
 /* hide scroll bar */
@@ -82,8 +79,9 @@
   list-style: none;
   border: 5px solid #fff;
   background-color: #fff;
-  padding: 40px;
+
   border-radius: 12px;
+  margin: none;
 }
 
 .item {
@@ -98,12 +96,10 @@
   align-items: center;
   color: #fff;
   border-radius: 8px;
-
-  font-size: 32px;
 }
 
 .item:nth-child(5n + 1) {
-  background-image: url(https://images.pexels.com/photos/2818656/pexels-photo-2818656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/3988089/pexels-photo-3988089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,7 +125,6 @@
 }
 
 .viewport {
-  width: calc(100% - 15%);
   margin-left: 10px;
   margin-right: 10px;
 }

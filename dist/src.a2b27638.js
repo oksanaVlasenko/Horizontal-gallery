@@ -193,6 +193,11 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("./styles.css");
+
+var item = document.querySelector(".item");
+console.log(item.clientWidth);
+var list = document.querySelector(".list");
+list.style.width = 3.17 * item.clientWidth + "px";
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
